@@ -1,5 +1,0 @@
-run id, strategy, time to plan, robot task number, human task number, makespan, risk
-Planner, 18950.25, 9.0, 9.0, 131.01190476190476, 2.8188848735286503E-18
-RiskAssessmentPlanner, 81038.5, 9.0, 9.0, 149.76190476190476, 2.475868499227842E-18
-MakespanPlanner, 97742.75, 9.0, 9.0, 105.05952380952381, 1.0190377794695276E-17
-RiskPlanner, 56001.25, 9.0, 9.0, 360.0, 4.090278912838339E-24
