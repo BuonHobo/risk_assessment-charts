@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv('/var/home/buonhobo/IdeaProjects/platinum_experiments/domains/risk_assessment/collected_data/all_data2.csv')
+df = pd.read_csv('/var/home/buonhobo/IdeaProjects/platinum_experiments/domains/risk_assessment/collected_data/all_data.csv')
 
 def visualize_data(df):
     # Create a FacetGrid to visualize multiple graphs in a grid
