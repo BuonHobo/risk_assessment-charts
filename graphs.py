@@ -18,6 +18,7 @@ def timetoplan_strategy(data, dest):
 
     # Show the plot
     plt.savefig(dest)
+    plt.close()
 
 
 def risk_makespan_shared(data, dest):
@@ -39,6 +40,7 @@ def risk_makespan_shared(data, dest):
 
     # Show the plot
     plt.savefig(dest)
+    plt.close()
 
 
 def risk_makespan_strategy(data, dest):
@@ -60,6 +62,7 @@ def risk_makespan_strategy(data, dest):
 
     # Show the plot
     plt.savefig(dest)
+    plt.close()
 
 
 def task_strategy(data, dest):
@@ -104,6 +107,7 @@ def task_strategy(data, dest):
 
     # Display the plot
     plt.savefig(dest)
+    plt.close()
 
 
 def collisions_strategy(data, dest):
@@ -114,11 +118,12 @@ def collisions_strategy(data, dest):
     ax.set_ylabel('Number of Collisions')
     ax.legend(['Foam', 'Wood', 'Metal'], loc='upper left')
     plt.savefig(dest)
+    plt.close()
 
 
 def collisionscore_makespan_shared(data, dest):
     # Create a FacetGrid to visualize multiple graphs in a grid
-    g = sns.FacetGrid(data, col="shared", row="expertise", margin_titles=True)
+    g = sns.FacetGrid(data, col="shared", margin_titles=True)
 
     # Plot makespan vs risk in a scatter plot
     g.map_dataframe(sns.scatterplot, x="best makespan", y="collision score", hue="strategy", style="strategy",
@@ -132,11 +137,12 @@ def collisionscore_makespan_shared(data, dest):
 
     # Show the plot
     plt.savefig(dest)
+    plt.close()
 
 
 def collisionscore_makespan_strategy(data, dest):
     # Create a FacetGrid to visualize multiple graphs in a grid
-    g = sns.FacetGrid(data, col="strategy", row='expertise', margin_titles=True)
+    g = sns.FacetGrid(data, col="strategy", margin_titles=True)
 
     # Plot makespan vs risk in a scatter plot
     g.map_dataframe(sns.scatterplot, x="best makespan", y="collision score", hue="shared", style="shared",
@@ -150,3 +156,4 @@ def collisionscore_makespan_strategy(data, dest):
 
     # Show the plot
     plt.savefig(dest)
+    plt.close()
