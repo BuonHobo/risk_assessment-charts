@@ -17,6 +17,7 @@ def timetoplan_strategy(data, dest):
     plt.legend(title="Shared")
 
     # Show the plot
+    plt.tight_layout()
     plt.savefig(dest)
     plt.close()
 
