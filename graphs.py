@@ -42,6 +42,23 @@ def risk_makespan_shared(data, dest):
     plt.savefig(dest)
     plt.close()
 
+def risk_makespan_shared_linear(data, dest):
+    # Create a FacetGrid to visualize multiple graphs in a grid
+    g = sns.FacetGrid(data, col="shared", row="expertise", margin_titles=True)
+
+    # Plot makespan vs risk in a scatter plot
+    g.map_dataframe(sns.scatterplot, x="best makespan", y="average risk", hue="strategy", style="strategy",
+                    palette="deep", alpha=0.8)
+
+    # Customize the axes labels
+    g.set_axis_labels("Makespan", "Risk (log)")
+
+    # Add a legend
+    g.add_legend()
+
+    # Show the plot
+    plt.savefig(dest)
+    plt.close()
 
 def risk_makespan_strategy(data, dest):
     # Create a FacetGrid to visualize multiple graphs in a grid
@@ -56,6 +73,24 @@ def risk_makespan_strategy(data, dest):
 
     # Set the y-axis to logarithmic scale
     g.set(yscale="log")
+
+    # Add a legend
+    g.add_legend()
+
+    # Show the plot
+    plt.savefig(dest)
+    plt.close()
+
+def risk_makespan_strategy_linear(data, dest):
+    # Create a FacetGrid to visualize multiple graphs in a grid
+    g = sns.FacetGrid(data, col="strategy", row="expertise", margin_titles=True)
+
+    # Plot makespan vs risk in a scatter plot
+    g.map_dataframe(sns.scatterplot, x="best makespan", y="average risk", hue="shared", style="shared", palette="deep",
+                    alpha=0.8)
+
+    # Customize the axes labels
+    g.set_axis_labels("Makespan", "Risk (log)")
 
     # Add a legend
     g.add_legend()
