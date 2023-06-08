@@ -51,7 +51,7 @@ def risk_makespan_shared_linear(data, dest):
                     palette="deep", alpha=0.8)
 
     # Customize the axes labels
-    g.set_axis_labels("Makespan", "Risk (log)")
+    g.set_axis_labels("Makespan", "Risk (linear)")
 
     # Add a legend
     g.add_legend()
@@ -90,7 +90,7 @@ def risk_makespan_strategy_linear(data, dest):
                     alpha=0.8)
 
     # Customize the axes labels
-    g.set_axis_labels("Makespan", "Risk (log)")
+    g.set_axis_labels("Makespan", "Risk (linear)")
 
     # Add a legend
     g.add_legend()
