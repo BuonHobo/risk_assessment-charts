@@ -18,7 +18,7 @@ def timetoplan_strategy(data, dest):
 
     # Show the plot
     plt.tight_layout()
-    plt.savefig(dest)
+    plt.savefig(dest, dpi=500)
     plt.close()
 
 
@@ -40,7 +40,7 @@ def risk_makespan_shared(data, dest):
     g.add_legend()
 
     # Show the plot
-    plt.savefig(dest)
+    plt.savefig(dest, dpi=500)
     plt.close()
 
 def risk_makespan_shared_linear(data, dest):
@@ -58,7 +58,7 @@ def risk_makespan_shared_linear(data, dest):
     g.add_legend()
 
     # Show the plot
-    plt.savefig(dest)
+    plt.savefig(dest, dpi=500)
     plt.close()
 
 def risk_makespan_strategy(data, dest):
@@ -79,7 +79,7 @@ def risk_makespan_strategy(data, dest):
     g.add_legend()
 
     # Show the plot
-    plt.savefig(dest)
+    plt.savefig(dest, dpi=500)
     plt.close()
 
 def risk_makespan_strategy_linear(data, dest):
@@ -97,7 +97,7 @@ def risk_makespan_strategy_linear(data, dest):
     g.add_legend()
 
     # Show the plot
-    plt.savefig(dest)
+    plt.savefig(dest, dpi=500)
     plt.close()
 
 
@@ -142,7 +142,7 @@ def task_strategy(data, dest):
     ax.set_title('Assignments of Cubes to Robot and Human')
 
     # Display the plot
-    plt.savefig(dest)
+    plt.savefig(dest, dpi=500)
     plt.close()
 
 
@@ -153,7 +153,7 @@ def collisions_strategy(data, dest):
     ax.set_xlabel('Strategy')
     ax.set_ylabel('Number of Collisions')
     ax.legend(['Foam', 'Wood', 'Metal'], loc='upper left')
-    plt.savefig(dest)
+    plt.savefig(dest, dpi=500)
     plt.close()
 
 
@@ -172,7 +172,7 @@ def collisionscore_makespan_shared(data, dest):
     g.add_legend()
 
     # Show the plot
-    plt.savefig(dest)
+    plt.savefig(dest, dpi=500)
     plt.close()
 
 
@@ -191,5 +191,5 @@ def collisionscore_makespan_strategy(data, dest):
     g.add_legend()
 
     # Show the plot
-    plt.savefig(dest)
+    plt.savefig(dest, dpi=500)
     plt.close()
